@@ -11,8 +11,8 @@
 <h2 id="安装以及配置步骤"><a href="#安装以及配置步骤" class="headerlink" title="安装以及配置步骤"></a>安装以及配置步骤</h2><p><strong>1、安装BusyBox</strong></p>
 <p>​    安装好软件后直接打开点击install就行了，安装过程需要授予它root权限，默认的安装路径是 /system/xbin ，如果需要修改的话可以进到设置里面修改</p>
 <p><strong>2、安装Linux Deploy</strong></p>
-<p>​    安装好软件后，点击左上角三个横杠，选择设置，勾选 锁定Wi-Fi 和 CPU唤醒 <img src="..%5Cimages1%5CIMG_20211105_002356.jpg"></p>
-<p>之后将下面的 PATH变量 设置为你刚才BusyBox的安装路径，之后点 更新环境<img src="..%5Cimages1%5CIMG_20211105_002641.jpg"></p>
+<p>​    安装好软件后，点击左上角三个横杠，选择设置，勾选 锁定Wi-Fi 和 CPU唤醒 <img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5CIMG_20211105_002356.jpg"></p>
+<p>之后将下面的 PATH变量 设置为你刚才BusyBox的安装路径，之后点 更新环境<img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5CIMG_20211105_002641.jpg"></p>
 <p><strong>3、配置Linux Deploy</strong></p>
 <blockquote>
 <p><strong>发行版：</strong>我这里选择的是CentOS</p>
@@ -20,7 +20,7 @@
 <blockquote>
 <p><strong>架构：</strong>架构的话取决于你自己的CPU架构，可以去下载DevCheck 来查看自己的CPU架构，（选错架构的话会导致后面安装失败）可以看到我的是arrch64的，所以我的架构的那一栏就选择arrch64，选择其他发行版的话同理</p>
 </blockquote>
-<p><img src="..%5Cimages1%5CIMG_20211104_230556.jpg"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5CIMG_20211104_230556.jpg"></p>
 <blockquote>
 <p><strong>源地址：</strong>推荐使用国内的镜像源，可以从下面的镜像源中选一个</p>
 <p><a href="http://mirrors.bfsu.edu.cn/centos-altarch/">http://mirrors.bfsu.edu.cn/centos-altarch/</a><br><a href="http://mirrors.nju.edu.cn/centos-altarch/">http://mirrors.nju.edu.cn/centos-altarch/</a><br><a href="http://mirrors.ustc.edu.cn/centos-altarch/">http://mirrors.ustc.edu.cn/centos-altarch/</a></p>
@@ -49,10 +49,10 @@
 <blockquote>
 <p><strong>SSH：</strong>没什么好说的，一定要启动，SSH设置保持默认就行</p>
 </blockquote>
-<p><img src="..%5Cimages1%5CInkedIMG_20211105_002321.jpg"></p>
-<p><img src="..%5Cimages1%5CIMG_20211105_005011.jpg"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5CInkedIMG_20211105_002321.jpg"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5CIMG_20211105_005011.jpg"></p>
 <p><strong>4、安装CentOS</strong></p>
-<p>​    上述配置完成后返回到主页，点击右上角三个点，选择安装，等待安装完成即可。之后点击启动，若如下图所示则表示启动成功，其中倒数第二行后面一定要是done，否则则意味着安装失败<img src="..%5Cimages1%5CIMG_20211105_005726.jpg"></p>
+<p>​    上述配置完成后返回到主页，点击右上角三个点，选择安装，等待安装完成即可。之后点击启动，若如下图所示则表示启动成功，其中倒数第二行后面一定要是done，否则则意味着安装失败<img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5CIMG_20211105_005726.jpg"></p>
 <p><strong>5、登录到Linux</strong></p>
 <p>​    打开之前安装的JuiceSSH或者Termius，新建连接，服务器地址填 127.0.0.1 用户名和密码即为之前配置的用户名与密码，之后点击连接，不出意外的话，你就通过ssh连接上了你的Linux。同时你还可以使用处于同一局域网下的其他设备来连接到Linux，服务器地址即为你的手机IP，也就是显示在Linux Deploy软件主页上的地址。</p>
 <h2 id="下面讲如何通过内网穿透实现从公网访问这台手机上的Linux"><a href="#下面讲如何通过内网穿透实现从公网访问这台手机上的Linux" class="headerlink" title="下面讲如何通过内网穿透实现从公网访问这台手机上的Linux"></a>下面讲如何通过内网穿透实现从公网访问这台手机上的Linux</h2><p>主流的内网穿透工具有：花生壳、ngrok和frp，其中花生壳是收费的，而且价格还不太低，ngrok和frp都是免费的，不过ngrok免费版本每次启动会变IP，而frp的话则需要你拥有一台具有公网IP的服务器，由于我主要是自己搭着玩的，手上也正好有一台服务器，所以就选择了用frp来实现内网穿透。</p>
@@ -69,7 +69,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd frp</span><br></pre></td></tr></table></figure>
 
 <p>下图为文件夹里包含的文件，其中前三个是与客户端相关的文件（以c结尾代表client即客户端）后三个则是与服务器相关的文件（以s结尾代表server）</p>
-<p><img src="..%5Cimages1%5Cimage-20211105161437051.png" alt="image-20211105161437051"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5Cimage-20211105161437051.png" alt="image-20211105161437051"></p>
 <p>因为我们是在配置服务端，所以我们可以把前三个文件删除</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rm frpc frpc.ini frpc_full.ini</span><br></pre></td></tr></table></figure>
 
@@ -77,9 +77,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim frps.ini</span><br></pre></td></tr></table></figure>
 
 <p>首次打开应该只有如下两行</p>
-<p><img src="..%5Cimages1%5Cimage-20211105162152048.png" alt="image-20211105162152048"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5Cimage-20211105162152048.png" alt="image-20211105162152048"></p>
 <p>向其中添加如下配置</p>
-<p><img src="..%5Cimages1%5Cimage-20211105162431060.png" alt="image-20211105162431060"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5Cimage-20211105162431060.png" alt="image-20211105162431060"></p>
 <blockquote>
 <p><strong>bind_port：</strong>表示用于客户端和服务端连接的端口，这个端口号我们之后在配置客户端的时候要用到。</p>
 <p><strong>dashboard_port：</strong>是服务端仪表板的端口，若使用7500端口，在配置完成服务启动后可以通过浏览器访问 x.x.x.x:7500 （其中x.x.x.x为你服务器的IP）查看frp服务运行信息。</p>
@@ -92,7 +92,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">./frps -c frps.ini</span><br></pre></td></tr></table></figure>
 
 <p>如下图所示即代表运行正常，可以访问 x.x.x.x:7500 并使用自己刚设置的用户名密码登录，即可看到仪表盘界面</p>
-<p><img src="..%5Cimages1%5Cimage-20211105163022084.png" alt="image-20211105163022084"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5Cimage-20211105163022084.png" alt="image-20211105163022084"></p>
 <p>此时的服务端仅运行在前台，如果Ctrl+C停止或者关闭SSH窗口后，frps都会停止运行，因此使用nohup命令将其运行在后台，首先Ctrl+C停止服务，之后输入命令</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nohup ./frps -c frps.ini &amp;</span><br></pre></td></tr></table></figure>
 
@@ -117,9 +117,9 @@
 
 <p>至此服务端配置完毕</p>
 <h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><p>同样使用wget命令将相应版本的frp压缩包下载并解压，并删除其中frps相关的文件，留下frpc相关文件，编辑frpc.ini文件，默认打开如下图所示</p>
-<p><img src="..%5Cimages1%5Cimage-20211105165332239.png" alt="image-20211105165332239"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5Cimage-20211105165332239.png" alt="image-20211105165332239"></p>
 <p>由于之前在服务端配置了token，所以在客户端我们需要加入token</p>
-<p><img src="..%5Cimages1%5Cimage-20211105165425435.png" alt="image-20211105165425435"></p>
+<p><img src="/2021/11/04/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/%E5%88%A9%E7%94%A8%E6%97%A7%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BALinuxDeploy%EF%BC%8C%E5%90%8C%E6%97%B6%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%5Cimage-20211105165425435.png" alt="image-20211105165425435"></p>
 <p>其中common字段下的三项分别为服务端的IP地址、端口以及刚添加的token，这些与之前服务端配置的保持一致就行</p>
 <p>SSH字段则可以理解为自定义的规则，若之后你需要映射其他的端口，按照它的格式填写即可。</p>
 <blockquote>
