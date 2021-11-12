@@ -157,4 +157,95 @@ WantedBy=multi-user.target
         <tag>搞机</tag>
       </tags>
   </entry>
+  <entry>
+    <title>如何在Windows上搭建Hexo博客，以及更换主题</title>
+    <url>/2021/11/07/usehexo/</url>
+    <content><![CDATA[<h2 id="前提准备"><a href="#前提准备" class="headerlink" title="前提准备"></a>前提准备</h2><p><strong>安装：</strong></p>
+<p>1.<a href="https://nodejs.org/en/">Node.js</a></p>
+<p>2.<a href="https://git-scm.com/">Git</a></p>
+<p>以上两个工具的安装教程可以自行百度，基本上都是一直点下一步就可以了</p>
+<h2 id="部署Hexo本地服务"><a href="#部署Hexo本地服务" class="headerlink" title="部署Hexo本地服务"></a>部署Hexo本地服务</h2><p><strong>1.在你想要放置Hexo博客文件的地方创建一个文件夹，例如Hexo</strong></p>
+<p><strong>2.使用npm安装Hexo</strong></p>
+<p>进入刚创建的文件夹内，打开命令行输入</p>
+<pre><code>npm install -g hexo-cli
+</code></pre>
+<p>国内用户使用需要先将npm的镜像源更换为国内镜像源，不然下载速度非常感人</p>
+<pre><code>npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<p>安装完成后初始化博客</p>
+<pre><code>hexo init
+</code></pre>
+<p>构建Hexo</p>
+<pre><code>hexo g
+</code></pre>
+<p>启动Hexo内建服务器</p>
+<pre><code>hexo s
+</code></pre>
+<p>如果出现提示未知命令，先执行</p>
+<pre><code>npm install hexo-server --save
+</code></pre>
+<p>之后再执行 hexo s 即可</p>
+<p>完成上述操作后，浏览器访问 127.0.0.1:4000即可看到Hexo初始化界面</p>
+<p><img src="/2021/11/07/usehexo/5sacauxohb.png"></p>
+<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p><strong>1.在GitHub中创建个人仓库</strong></p>
+<p>​    在GitHub上新建一个仓库，仓库名为 <code>&lt;你的GitHub用户名&gt;.github.io</code>，比如你的用户名为 <code>name</code>，则你的仓库名为 <code>name.github.io</code></p>
+<p><strong>2.添加本地的ssh到GitHub中，这一步是为了方便以后推送的时候不用每次都要输入密码</strong></p>
+<p>桌面右键选择 <code>Git Bash Here</code>，命令行里输入</p>
+<pre><code>ssh-keygen -t rsa -C  youremail@example.com(该处换成你自己注册GitHub的邮箱)
+</code></pre>
+<p>之后全部回车默认，执行完之后进入到</p>
+<pre><code>C:\Users\你的用户名\.ssh
+</code></pre>
+<p>即可看到刚生成的 id_rsa 和 id_rsa.pub 两个文件，其中 id_rsa.pub 为公钥， id_rsa 为私钥，用记事本打开 id_rsa.pub ，复制其中的内容，接下来进入GitHub的设置界面<img src="/2021/11/07/usehexo/Snipaste_2021-11-12_19-22-30.png"></p>
+<p>侧边栏中找到 <code>SSH and GPG keys</code>，点进去选择 <code>New SSH key</code> 将刚才复制的内容粘贴到key中，至于title你可以自己随便给它起个名字。添加完成后在命令行中输入 <code>ssh -T git@github.com</code> 测试连接，出现如下图所示，则配置成功<img src="/2021/11/07/usehexo/Snipaste_2021-11-12_19-29-08.png"></p>
+<p><strong>3.关联Hexo与GitHub</strong></p>
+<p>打开站点的配置文件（Hexo/_config.yml），找到 deploy选项</p>
+<pre><code>deploy:
+    type: git
+    repo: 这里填入你之前在GitHub上创建仓库的完整路径
+    branch: main(根据自己的需求选择分支)
+</code></pre>
+<p>安装git部署插件，输入命令</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre>
+<p>接着输入命令</p>
+<pre><code>hexo clean             #清除缓存
+hexo g                 #生成
+hexo d                #部署
+</code></pre>
+<p>之后在浏览器中输入 &lt;<code>你的GitHub用户名&gt;.github.io</code>（也就是你的仓库名），即可看到你所搭建的博客了。</p>
+<h2 id="更换Hexo主题"><a href="#更换Hexo主题" class="headerlink" title="更换Hexo主题"></a>更换Hexo主题</h2><p>主题仓库：<a href="https://hexo.io/themes/">Themes</a></p>
+<p>找到你喜欢的主题，下载下来（我下面使用的主题功能比较少，如果想要主题具有很多功能性的话可以去试试next主题，网上关于这个主题的教程也相当之多）</p>
+<p>在博客的根目录下打开命令行，输入</p>
+<pre><code>git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora
+</code></pre>
+<p>之后打开站点配置文件 _config.yml，修改主题为</p>
+<pre><code># Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: diaspora
+</code></pre>
+<p>如果你想对主题做一些修改的话，之后可以在主题配置文件 <code>Hexo/themes/diaspora/_config.yml</code>中，来对主题进行修改，主题的一些设置也可到说明页面查看 <a href="https://github.com/Fechin/hexo-theme-diaspora">文档</a></p>
+<p>再次部署网站</p>
+<pre><code>hexo clean
+hexo g
+hexo d
+</code></pre>
+<p>如果出现错误</p>
+<pre><code>extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug
+</code></pre>
+<p>安装如下内容</p>
+<pre><code>npm install hexo-renderer-pug hexo-renderer-stylus
+</code></pre>
+<p>安装完成后，重新部署即可。</p>
+<p>同时由于更改之后，GitHub页面需要一段时间才会做出更改，可以先将其部署在本地服务器上看看效果。</p>
+<p>至此Hexo博客就搭建完成啦。</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
 </search>
